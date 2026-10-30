@@ -1,6 +1,7 @@
 """Behavioral checks for bundled and private, read-only resource lookup."""
 import hashlib
 import json
+import re
 from pathlib import Path
 import shutil
 import subprocess
@@ -19,6 +20,17 @@ def run(root, *args):
 
 
 class ResourceTests(unittest.TestCase):
+    def test_documentation_links_resolve_inside_skill(self):
+        for path in ROOT.rglob("*.md"):
+            if any(part in {".git", "private", "__pycache__"} for part in path.relative_to(ROOT).parts):
+                continue
+            for href in re.findall(r"\]\(([^)]+)\)", path.read_text(encoding="utf-8")):
+                if href.startswith(("https:", "http:", "#")):
+                    continue
+                target = (path.parent / href.split("#")[0]).resolve()
+                self.assertTrue(target.is_relative_to(ROOT.resolve()), (path, href))
+                self.assertTrue(target.is_file(), (path, href))
+
     def test_manifest_points_to_real_content(self):
         manifest = json.loads((ROOT / "resources/manifest.json").read_text(encoding="utf-8"))
         self.assertEqual(manifest["mode"], "author-specific")
