@@ -13,7 +13,7 @@ description: 窗台作者的专属观点长文Skill，内置其思想底座、�
 
 ## 确定这次要做什么
 
-- **写作／下一篇**：读[素材与语境](references/source-context.md)和[写作与编辑](references/writing.md)。查现有选题与最近稿件，避免换标题重复；已有题目就围绕该题写。默认完成正文，不只交提纲。
+- **写作／下一篇**：读[素材与语境](references/source-context.md)、[写作与编辑](references/writing.md)及[证据与一致性检查](references/quality-gates.md)。先定主读者，检索不替代论证；查近期稿防重复，已有题目就围绕它写，默认交完整正文。
 - **热点／社会争议／知乎深答**：另读[知乎长文方法](references/zhihu-longform.md)，核对事实与时点，按机制、代价、替代及最强反方展开；仍使用窗台作者资源，不新建人格或强套六段。
 - **改稿**：分清理解、论证与语言问题，回到相应层修复，不把“生硬”都归因于钩子不够。
 - **纯排版／配图**：正文保持不动，读[视觉与平台适配](references/visuals-platforms.md)，只做请求的部分。

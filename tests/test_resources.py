@@ -55,6 +55,14 @@ class ResourceTests(unittest.TestCase):
         self.assertEqual(code, 0)
         self.assertTrue(any("CTX-S09" in h["heading"] or "W04" in h["heading"] for h in data["results"]))
 
+    def test_review_fixtures_are_not_author_resources(self):
+        code, data = run(ROOT, "判断 条件", "--scope", "bundled", "--limit", "20")
+        self.assertEqual(code, 0)
+        self.assertTrue(data["results"])
+        for hit in data["results"]:
+            self.assertTrue(hit["path"].startswith("resources/"), hit)
+            self.assertNotIn("tests/", hit["path"])
+
     def isolated_copy(self, destination):
         shutil.copytree(ROOT / "scripts", destination / "scripts")
         shutil.copytree(ROOT / "resources", destination / "resources")
