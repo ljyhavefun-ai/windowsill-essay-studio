@@ -1,0 +1,4 @@
+interface:
+  display_name: "Windowsill Essay Studio"
+  short_description: "结合完整语境与个人判断，统筹长文写作、原创配图、三平台排版及授权推送"
+  default_prompt: "使用 $windowsill-essay-studio，结合我的素材和既有偏好写下一篇完整长文，按我指定的平台制作交付版本。"

@@ -1,0 +1,22 @@
+# Keep private author material and publishing state out of this repository.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.token
+.private/
+private/
+workspace/
+sources/
+books/
+drafts/
+outputs/
+receipts/
+browser-profile/
+.playwright/
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
