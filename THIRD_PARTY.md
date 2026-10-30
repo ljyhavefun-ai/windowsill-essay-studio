@@ -15,3 +15,7 @@ The following projects informed or can support individual stages:
 - **Runtime-native imagegen** — optional raster generation; not implemented or distributed by this repository.
 
 Names without an upstream URL are integration identifiers, not a claim that a particular public installer or repository has been verified. Obtain each dependency from its own trusted source and check its license before redistributing it. The MIT license of this repository does not relicense any dependency.
+
+## Reading ideas, not redistributed books
+
+The author resources connect original editorial summaries with reading notes on 学习高手 (李柘远), 当下的力量 (Eckhart Tolle), 马斯克原理 (as identified in the local notes), and Metaphors We Live By (George Lakoff and Mark Johnson). The short syntheses in resources/reading are newly written; the source books and private note collections are not redistributed. Their original concepts, quotations, stories and copyrights are not relicensed by this repository. Reading scope and uncertainty are stated in each resource.

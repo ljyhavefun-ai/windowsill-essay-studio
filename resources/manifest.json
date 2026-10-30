@@ -1,0 +1,64 @@
+{
+  "version": "2.0.0",
+  "author": "Windowsill / 窗台",
+  "mode": "author-specific",
+  "updated": "2026-10-31",
+  "resources": [
+    {
+      "path": "resources/articles/coverage.md",
+      "title": "已有文章覆盖表",
+      "type": "articles"
+    },
+    {
+      "path": "resources/author/voice.md",
+      "title": "窗台的表达与审美",
+      "type": "author"
+    },
+    {
+      "path": "resources/author/worldview.md",
+      "title": "窗台的判断底座",
+      "type": "author"
+    },
+    {
+      "path": "resources/contexts/choices.md",
+      "title": "选择与兴趣：内容卡",
+      "type": "contexts"
+    },
+    {
+      "path": "resources/contexts/learning.md",
+      "title": "学习：保留完整问题的内容卡",
+      "type": "contexts"
+    },
+    {
+      "path": "resources/reading/first-principles.md",
+      "title": "BOOK-FIRST 马斯克原理：把真实约束与惯例分开",
+      "type": "reading"
+    },
+    {
+      "path": "resources/reading/learning.md",
+      "title": "BOOK-LEARN 学习高手：把模糊挫败变成可处理的问题",
+      "type": "reading"
+    },
+    {
+      "path": "resources/reading/metaphors.md",
+      "title": "BOOK-METAPHOR Metaphors We Live By：检查问题被怎样命名",
+      "type": "reading"
+    },
+    {
+      "path": "resources/reading/presence.md",
+      "title": "BOOK-NOW 当下的力量：把自我评价与正在发生的事分开",
+      "type": "reading"
+    }
+  ],
+  "provenance": {
+    "CTX-X": "作者提供的三人群聊分区，身份含推定；公开仅重述作者观点和必要问题条件",
+    "CTX-S": "作者提供的家教对话分区，身份含推定；公开仅匿名语境重述",
+    "BOOK": "作者授权内化的书籍笔记；公开仅原创短综合，不含原书全文"
+  },
+  "boundaries": [
+    "原始私聊和私人目录不随包分发",
+    "原作者经历不自动属于调用者",
+    "内置内容可以直接使用；本机配置提供进一步原文回读",
+    "不声称读完全部笔记或书籍"
+  ]
+}
