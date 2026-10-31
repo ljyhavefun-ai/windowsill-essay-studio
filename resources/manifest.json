@@ -1,5 +1,5 @@
 {
-  "version": "2.2.0",
+  "version": "2.3.3",
   "author": "Windowsill / 窗台",
   "mode": "author-specific",
   "updated": "2026-10-31",
@@ -37,11 +37,6 @@
     {
       "path": "resources/reading/learning.md",
       "title": "BOOK-LEARN 学习高手：把模糊挫败变成可处理的问题",
-      "type": "reading"
-    },
-    {
-      "path": "resources/reading/metaphors.md",
-      "title": "BOOK-METAPHOR Metaphors We Live By：检查问题被怎样命名",
       "type": "reading"
     },
     {

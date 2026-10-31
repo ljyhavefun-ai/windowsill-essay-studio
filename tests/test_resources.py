@@ -63,6 +63,27 @@ class ResourceTests(unittest.TestCase):
             self.assertTrue(hit["path"].startswith("resources/"), hit)
             self.assertNotIn("tests/", hit["path"])
 
+    def test_reading_resources_exclude_removed_book(self):
+        manifest = json.loads((ROOT / "resources/manifest.json").read_text(encoding="utf-8"))
+        reading = [x for x in manifest["resources"] if x["type"] == "reading"]
+        self.assertEqual(len(reading), 3)
+        self.assertFalse((ROOT / "resources/reading/metaphors.md").exists())
+        code, data = run(ROOT, "BOOK-METAPHOR", "--scope", "bundled")
+        self.assertEqual(code, 0)
+        self.assertEqual(data["results"], [])
+        config = ROOT / "private/sources.json"
+        if config.exists():
+            sources = json.loads(config.read_text(encoding="utf-8"))["sources"]
+            self.assertNotIn("book-metaphors", [x["id"] for x in sources])
+
+    def test_expanded_reading_is_searchable_and_substantive(self):
+        for query, filename in [("精读", "learning.md"), ("关系", "presence.md"), ("交付", "first-principles.md")]:
+            code, data = run(ROOT, query, "--scope", "bundled", "--limit", "20")
+            self.assertEqual(code, 0)
+            hits = [x for x in data["results"] if x["path"] == "resources/reading/" + filename]
+            self.assertTrue(hits, (query, data))
+            self.assertTrue(any(len(x["excerpt"]) > 100 for x in hits), query)
+
     def isolated_copy(self, destination):
         shutil.copytree(ROOT / "scripts", destination / "scripts")
         shutil.copytree(ROOT / "resources", destination / "resources")

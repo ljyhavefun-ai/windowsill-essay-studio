@@ -18,4 +18,4 @@ Names without an upstream URL are integration identifiers, not a claim that a pa
 
 ## Reading ideas, not redistributed books
 
-The author resources connect original editorial summaries with reading notes on 学习高手 (李柘远), 当下的力量 (Eckhart Tolle), 马斯克原理 (as identified in the local notes), and Metaphors We Live By (George Lakoff and Mark Johnson). The short syntheses in resources/reading are newly written; the source books and private note collections are not redistributed. Their original concepts, quotations, stories and copyrights are not relicensed by this repository. Reading scope and uncertainty are stated in each resource.
+The author resources connect original editorial summaries with reading notes on 学习高手 (李柘远), 当下的力量 (Eckhart Tolle), 马斯克原理 (as identified in the local notes). The short syntheses in resources/reading are newly written; the source books and private note collections are not redistributed. Their original concepts, quotations, stories and copyrights are not relicensed by this repository. Reading scope and uncertainty are stated in each resource.

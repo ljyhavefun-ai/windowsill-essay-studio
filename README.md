@@ -11,7 +11,7 @@
 | 16项作者判断及适用边界 | [worldview.md](resources/author/worldview.md) | 不是抽象风格标签，而是可发展的主张、理由与限制 |
 | 作者声线、真实短表达锚点、审美与否定过的写法 | [voice.md](resources/author/voice.md) | 默认采用，不模仿其他作者的身份或经历 |
 | 11张完整语境卡 | [学习](resources/contexts/learning.md)、[选择与兴趣](resources/contexts/choices.md) | 同时保留问题、作者判断、延伸与不能推导的结论 |
-| 4组书籍思想综合 | [学习高手](resources/reading/learning.md)、[当下的力量](resources/reading/presence.md)、[马斯克原理](resources/reading/first-principles.md)、[Metaphors We Live By](resources/reading/metaphors.md) | 作者已授权内化；真正有内容，不只是列书名 |
+| 3组扩展书籍思想综合，33张内容卡 | [学习高手](resources/reading/learning.md)（12张）、[当下的力量](resources/reading/presence.md)（10张）、[马斯克原理](resources/reading/first-principles.md)（11张） | 每卡含可用判断、条件与来源；帮助形成内容，不是给文章套理论或修辞 |
 | 8篇已有文章覆盖表 | [coverage.md](resources/articles/coverage.md) | 防止换标题重复，不把协作稿一律当最佳范文 |
 | 只读检索脚本 | [search_resources.py](scripts/search_resources.py) | 检索随包正文；本机存在私有连接时同时查原材料 |
 
@@ -77,7 +77,7 @@ python scripts/search_resources.py --stats
 
 已融合作者此前两份知乎高赞长文Skill：生活关联与认知缺口、事实／陈述／未知分层、现象—机制—代价／替代分析、最强反方，以及来自实际取舍的结尾问题。详见[知乎长文方法](references/zhihu-longform.md)。
 
-它与内置作者资源共用一套人格和判断，不是复制两个新入口。固定六段、每千字金句、延迟简单答案、引用框代替所有加粗等旧规则已改为按内容和平台选择；不许诺高赞、完读或涨粉，不为制造争论牺牲事实与作者立场。
+它与内置作者资源共用一套人格和判断，不是复制两个新入口。不再预设场景开头、回扣结尾或六段分析；默认篇幅略收紧，删去重复解释与尾声，按内容决定首尾和结构；不许诺高赞、完读或涨粉，不为制造争论牺牲事实与作者立场。
 
 ### 从实稿失败补上的质量检查
 
